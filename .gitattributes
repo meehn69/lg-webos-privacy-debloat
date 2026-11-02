@@ -1,0 +1,5 @@
+# webOS init scripts silently no-op on CRLF lines - keep everything LF
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
