@@ -1,4 +1,8 @@
-# Reclaim Your LG webOS TV
+# A Guide to Debloating and Hardening a Rooted LG webOS TV
+
+This guide documents how to stop an LG webOS TV from collecting and sending
+out data — a telemetry wall, DNS firewall and daemon masking applied on the
+TV itself — while keeping the Content Store and streaming apps working.
 
 Rooted-TV privacy hardening and debloat for LG webOS: an **on-device telemetry
 wall** (no router changes), a firewall that defeats the TV's DNS-evasion
@@ -9,7 +13,7 @@ real 2022 LG TV, then made generic.
 Tested on: **LG UQ8050PSB (2022, India, "webOS 22" / internal 7.5.7 Lite
 build)**. The approach applies to rooted webOS 5–9 TVs generally; paths and
 behavior on "Lite" regional builds differ from guides written for standard
-builds — the Gotchas section documents every difference we hit.
+builds — the Implementation Notes section documents every difference we hit.
 
 > **This is not a rooting guide.** Rooting itself is done by the excellent
 > community tools linked below (we used
@@ -81,7 +85,7 @@ python -m http.server 8100                 # then on the TV:
 #   curl http://<PC_IP>:8100/final_blocklist.txt -o /var/lib/webosbrew/lgblock.txt
 ```
 
-**3. Install the boot hooks** (order matters — see Gotchas):
+**3. Install the boot hooks** (order matters — see Implementation Notes):
 
 ```bash
 # on the TV, as root:
@@ -122,7 +126,7 @@ replaces the screensaver with 330+ 4K aerial videos, and
 whole home screen (explicit webOS 7 support, dashboard with remote-key
 remapping).
 
-## Gotchas we hit (so you don't have to)
+## Implementation Notes
 
 These are the hard-won specifics of a 2022 **Lite** build:
 
