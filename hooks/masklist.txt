@@ -1,0 +1,15 @@
+/usr/sbin/sdx
+/usr/sbin/admanager
+/usr/sbin/adoverlay-service
+/usr/sbin/rdxd
+/usr/sbin/remotelogger
+/usr/sbin/uploadd
+/usr/sbin/acr2
+/usr/sbin/livepick
+/usr/sbin/livepickfull
+/usr/sbin/voiceconductor
+/usr/sbin/voiceinput
+/usr/bin/com.webos.app.livepick
+/usr/bin/com.webos.app.livepick-full
+/usr/bin/com.webos.app.voice
+/usr/bin/remotelogger_test
