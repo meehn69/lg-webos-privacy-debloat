@@ -1,13 +1,11 @@
 # A Guide to Debloating and Hardening a Rooted LG webOS TV
 
 This guide documents how to stop an LG webOS TV from collecting and sending
-out data — a telemetry wall, DNS firewall and daemon masking applied on the
-TV itself — while keeping the Content Store and streaming apps working.
-
-Rooted-TV privacy hardening and debloat for LG webOS: an **on-device telemetry
-wall** (no router changes), a firewall that defeats the TV's DNS-evasion
-tricks, telemetry daemon masking that survives reboots, and a reusable toolkit
-of stdlib-only scripts. Everything here was built and verified end-to-end on a
+out data — while keeping the Content Store and streaming apps working. It
+covers an **on-device telemetry wall** (~315 domains, no router changes), a
+firewall that defeats the TV's DNS-evasion tricks, telemetry daemon masking
+that survives reboots, app preload removal, and a reusable toolkit of
+stdlib-only scripts. Everything here was built and verified end-to-end on a
 real 2022 LG TV, then made generic.
 
 Tested on: **LG UQ8050PSB (2022, India, "webOS 22" / internal 7.5.7 Lite
